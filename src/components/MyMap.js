@@ -1,3 +1,5 @@
+import React from 'react'
+import { useState } from 'react'
 import { Map, Marker } from 'pigeon-maps'
 
 
@@ -13,7 +15,7 @@ const MyMap = ({geo}) => {
     <Map 
       height={500}
       center={center} 
-      zoom={zoom} 
+      zoom={zoom}
       onBoundsChanged={({ center, zoom }) => { 
         setCenter(center) 
         setZoom(zoom) 
